@@ -1,6 +1,7 @@
 package com.aula.devsuperior.exemplo_um.DTO;
 
 import com.aula.devsuperior.exemplo_um.entities.Game;
+import com.aula.devsuperior.exemplo_um.projections.GameMinProjection;
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +19,14 @@ public class GameDTO {
     public GameDTO(){
 
     }
+      public GameDTO(GameMinProjection entity) {
+        id = entity.getId();
+        title = entity.getTitle();
+        year = entity.getYear();
+        imgUrl = entity.getImgUrl();
+        shortDescription = entity.getShortDescription();
+    }
+
 
     public GameDTO(Game entity) {
         id = entity.getId();
