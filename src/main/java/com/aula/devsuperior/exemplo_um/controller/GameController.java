@@ -1,7 +1,6 @@
 package com.aula.devsuperior.exemplo_um.controller;
 
 import com.aula.devsuperior.exemplo_um.DTO.GameDTO;
-import com.aula.devsuperior.exemplo_um.entities.Game;
 import com.aula.devsuperior.exemplo_um.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
