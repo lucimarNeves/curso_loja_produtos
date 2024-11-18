@@ -22,7 +22,7 @@ public class GameDTO {
       public GameDTO(GameMinProjection entity) {
         id = entity.getId();
         title = entity.getTitle();
-        year = entity.getYear();
+        year = entity.getGameYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
     }
